@@ -1,0 +1,39 @@
+s=14
+r=20
+d=50
+f=35
+so=45
+cname=input('enter customer name:')
+cphno=int(input('enter customer phone number:'))
+sq=int(input('enter no of sugar packets: '))
+rq=int(input('enter no of rice packets:'))
+dq=int(input('enter no of redgram packets:'))
+fq=int(input('enter no of flour packets:'))
+soq=int(input('enter no of soaps:'))
+total=(s*sq)+(r*rq)+(d*dq)+(f*fq)+(so*sq)
+if total>5000:
+    disc=total*10/100
+    tax=total*10/100
+elif total>3000:
+    disc=total*8/100
+    tax=total*10/100
+elif total>2000:
+    disc=total*5/100
+    tax=total*18/100
+elif total>1000:
+    disc=total*3/100
+    tax=total*18/100
+elif total<1000:
+     disc=total*1/100
+     tax=0
+marketbill=total-disc+tax
+print('super market bill:',marketbill)
+
+        
+        
+        
+        
+        
+        
+        
+        
